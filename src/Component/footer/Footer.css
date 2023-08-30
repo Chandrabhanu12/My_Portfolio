@@ -1,0 +1,130 @@
+footer{
+    background: var(--color-primary);
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5rem;
+}
+
+footer a{
+    color: var(--color-bg);
+}
+
+.footer__logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+
+
+.permalinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.footer__socials a{
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.footer__socials a:hover{
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+.go__up{
+    justify-content: right;padding-left: 70%;
+}
+.footer__copyright{
+    /* margin-left: 70rem; */
+    color: var(--color-bg);
+}
+
+@media screen and (max-width:1024px){
+    .footer{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .footer__copyright{
+        color: var(--color-bg);
+        text-align:initial
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        width: var(--container--width-sm) ;
+    }
+    .permalinks{
+        display: table;
+    }
+
+    .footer__socials{
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .go__up{
+        padding-left:9rem
+    }
+}
+
+@media screen and (max-width:480px){
+    .footer{
+        width: var(--container--width-sm) ;
+    }
+    .permalinks{
+        display: table;
+    }
+
+    .footer__socials{
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .go__up{
+        padding-left:9rem
+    }
+}
+
+/* @media screen and(max-width:600px) {
+    .permalinks{
+        flex-direction: column;
+        gap: 5rem;
+        display: flex;
+
+    }
+    .footer__socials{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+    .go__up{
+        justify-content: center;
+    }
+    .footer__copyright{
+        margin-left: 70rem;
+        color: var(--color-bg);
+        justify-content: left;
+    }
+} */
