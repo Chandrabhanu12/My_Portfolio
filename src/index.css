@@ -121,20 +121,27 @@ img{
     object-fit: cover;
 }
 
-/* @media screen and (max-width:1024px){
+@media screen and (max-width:1024px){
     .container{
         width: var(--container-width-md); 
+    }
+    section{
+        margin-bottom: 6rem;
     }
 }
 
 
 @media screen and (max-width:600px){
     header{
-        width:var(--container-width-md); 
-
+        width:var(--container-width-sm); 
     }
-}  */
-@media screen and (max-width: 600px) {
+
+    section>h2{
+        margin-top: 2rem;
+    }
+
+} 
+/* @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden !important;
     }
@@ -153,3 +160,13 @@ img{
         overflow-x: hidden !important;
     }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    html {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+} */

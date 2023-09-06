@@ -1,4 +1,4 @@
-// To connect with your mongoDB database
+// To connect with mongoDB database
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/portfoliodb', {
 	dbName: 'PortfolioData',

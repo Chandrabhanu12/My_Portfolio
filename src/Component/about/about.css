@@ -50,13 +50,13 @@
 
 .circle-spin{
     position: absolute;
-    /* top: 78.6rem; */
+    top: 78.6rem;
     /* left: 50%; */
     transform: translate((-50%, -50%) rotate(0));
     width: 25%;
     height: 50%;
-    /* bottom: 25%; */
-    /* right: 58.5rem; */
+    bottom: 25%;
+    right: 58.8rem;
     border-radius: 50%;
     border-top: .1rem solid var(--color-bg);
     border-bottom: .1rem solid var(--color-bg);
@@ -114,12 +114,9 @@
 }
 
 @media screen and (max-width:1024px){
-    /* .circle-spin{
-        top: 86rem;
-        right: 13.75rem;
-        width: 38%;
-        height: 36%;
-    } */
+    .circle-spin{
+        display: none;
+    }
     .about__container{
         grid-template-columns: 1fr;
         gap: 0;
@@ -145,7 +142,8 @@
 
     .about__me-image{
         width: 15rem;
-        /* padding-right: 2rem; */
+        
+        padding-left: 3rem;
     }
 
     .about__cards{
@@ -161,10 +159,11 @@
         margin: 1.5rem 0;
     }
 
-    /* .circle-spin{
-        left: 4.3rem;
+    .circle-spin{
+        /* left: 4.3rem;
         top: 79.7rem;
         width: 15rem ;
-        height: 15rem;
-    } */
+        height: 15rem; */
+        display: none;
+    }
 }
